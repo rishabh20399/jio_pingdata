@@ -1,17 +1,17 @@
 #!/bin/bash
 
 # Specify the starting time in HH:MM format (24-hour format)
-start_time="23:40"  # Set your desired start time here
+start_time="03:00"  # Set your desired start time here
 
 # Number of days to run the scripts
 total_days=7
 
 # Path to your Python scripts
-script1_path="/data/data/com.termux/files/home/pingdata_collection/airtel/DataCollection2.py"
-script2_path="/data/data/com.termux/files/home/pingdata_collection/airtel/tracerouteData.py"
+script1_path="/data/data/com.termux/files/home/jio_pingdata/jio/DataCollection2.py"
+script2_path="/data/data/com.termux/files/home/jio_pingdata/jio/tracerouteData.py"
 
 # Path to your Git repository
-repository_path="/data/data/com.termux/files/home/pingdata_collection"
+repository_path="/data/data/com.termux/files/home/jio_pingdata"
 
 # Get the current date in 'YYYY-MM-DD' format
 current_date=$(date +'%Y-%m-%d')
@@ -55,10 +55,10 @@ for ((day=1; day<=$total_days; day++)); do
 
     # Navigate to your Git repository
     cd "$repository_path"
-    git remote set-url origin git@github.com:rishabh20399/pingdata_collection.git
+    git remote set-url origin git@github.com:rishabh20399/jio_pingdata.git
 
     git checkout -b my-changes
-    git add /data/data/com.termux/files/home/pingdata_collection/airtel/data
+    git add /data/data/com.termux/files/home/jio_pingdata/jio/data
     git commit -m "Add files from data"
     git push origin my-changes
 
