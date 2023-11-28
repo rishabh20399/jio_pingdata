@@ -1,10 +1,10 @@
 #!/bin/bash
 
 # Specify the starting time in HH:MM format (24-hour format)
-start_time="03:00"  # Set your desired start time here
+start_time="19:47"  # Set your desired start time here
 
 # Number of days to run the scripts
-total_days=7
+total_days=1
 
 # Path to your Python scripts
 script1_path="/data/data/com.termux/files/home/jio_pingdata/jio/DataCollection2.py"
